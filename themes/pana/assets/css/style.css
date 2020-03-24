@@ -5050,3 +5050,13 @@ a.overlay:hover {
 .colored-bg .contextual-links a:not(.button) {
 	color: #555555 !important;
 }
+.sticky .brand img{
+max-width: 75px;
+}
+#page-title{
+	background-position: center;
+	background-size: 100% 80%;
+}
+.block-title{
+	font-weight: 300;
+}

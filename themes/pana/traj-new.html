@@ -1,0 +1,437 @@
+<style type="text/css">
+    .grid__item .grid__item--md-span-8 *,.grid__item--md-span-12, .grid__item--md-span-12 * {
+        font-family: Arial !important;
+    }
+
+    .profile-transparent,
+    .profile-one {
+        color: transparent;
+        display: none;
+        padding: 0;
+        position: relative;
+        top: -1.4em;
+    }
+
+    .title-with-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .title-with-icon .icon.icon--people::before {
+        content: '';
+        background: url("/sites/default/files/group-people.svg") center center no-repeat;
+        display: block;
+        width: 34px;
+        height: 34px;
+    }
+
+    .icon.icon--people {
+        display: inline-flex;
+    }
+
+    .title-copy {
+        display: inline-flex;
+    }
+
+    .patient-profile-heading {
+        color: #332a85;
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: bold;
+        box-sizing: border-box;
+        border-bottom: 1px solid orange;
+        padding-bottom: 15px;
+        font-family: Arial !important;
+    }
+
+    .parent-patient {
+        background: #332a85;
+        color: white;
+        text-align: center;
+        margin-top: 6em;
+        padding: 0em;
+        display: block;
+        transition: .3s;
+        margin-left: 1.0088%;
+    }
+
+    .parent-patient:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .patient-content h2 {
+        text-transform: uppercase !important;
+        font-size: 18px;
+    }
+
+    .white {
+        color: white !important;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .img-responsive {
+        display: inline-block;
+        margin: -75px auto 0;
+        z-index: 33333 !important;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .img-responsive {
+            display: inline-block;
+            margin: -85px auto 0;
+            z-index: 33333 !important;
+        }
+    }
+
+    @media screen and (max-width: 1320px) {
+        .img-responsive {
+            display: inline-block;
+            margin: -65px auto 0;
+            z-index: 33333 !important;
+        }
+    }
+
+    .full-width-landing-page .brand--titles ul:first-child>li>ul>li {
+        padding: 1em 0em 0 1em;
+    }
+
+    .colons {
+        color: #F6A42B;
+        font-size: 24px;
+    }
+
+    .patient-details {
+        font-size: 20px !important;
+        margin-top: -17px !important;
+        padding-bottom: 2em !important;
+        margin-left: .8em !important;
+        margin-right: 0.8em !important;
+    }
+
+    .patient-content {
+        margin: -30px auto 0;
+        padding: 0 .2em;
+    }
+
+
+
+    .more-patients {
+        padding: .4em;
+        background:
+            #F6A42B;
+        margin: 1em 0em;
+        text-align: center;
+    }
+
+    .content--bold {
+        font-weight: bold;
+    }
+
+    .more-patients h1 {
+    color: #fff !important;
+    font-size: 34px;
+    max-width: 90%;
+    font-weight: lighter;
+    margin: auto;
+    margin-top: .5em;
+    margin-right: auto;
+    margin-bottom: .5em;
+    margin-left: auto;
+    line-height: 40px;
+}
+
+    img {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1066px) {
+
+
+.col-2-12 {
+    width: 18.16% !important;
+    margin-left: 2.25%;
+    z-index: 1;
+}
+.img-responsive{
+padding: 0em 0 !important;
+    min-width: 107%;
+    position: relative;
+    z-index: -1; 
+    right: 3.5%;
+}
+}
+
+
+    }
+
+    @media screen and (max-width: 1292px) {
+        .patient-content h2 {
+            font-size: 17px;
+        }
+
+        .colons {
+            font-size: 22px;
+        }
+    }
+
+
+    @media screen and (max-width:1065px) {
+
+
+        .img-responsive {
+            width: 200px;
+            margin: -100px auto 0;
+        }
+
+        .col-2-12 {
+            min-width: 100% !important;
+        }
+
+        .parent-patient {
+            background: #380786;
+            color: white;
+            text-align: center;
+            margin-top: 20%;
+            padding: 0em;
+            display: block;
+            transition: .3s;
+            margin-left: 0%;
+
+        }
+
+
+    }
+
+
+
+    @media screen and (max-width:767px) {
+        .img-responsive {
+            margin: -75px auto 0;
+        }
+
+
+        .more-patients h1 {
+            color: #fff !important;
+            font-size: 18px;
+            line-height: 20px;
+            margin: .5em 0em;
+            text-align: center;
+        }
+    }
+
+
+    /* Code for internet explorer in future */
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+
+        .grid__item--md-span-8 {
+            flex: 0 0 66.66667% !important;
+            -ms-flex: 0 0 66.66667% !important;
+        }
+    }
+@media screen and (max-width:1440px){
+    .patient-profile-heading {
+            color: #380786;
+            font-size: 18px;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border-bottom: 1.5px solid orange;
+            padding-bottom: 15px;
+        }
+        .patient-content h2 {
+            text-transform: uppercase !important;
+            font-size: 18px;
+        }
+        .patient-details {
+            font-size: 14px;
+    margin-top: -17px !important;
+    padding-bottom: 1em !important;
+    margin-left: .3em !important;
+    margin-right: 0.3em !important;
+        }
+        .patient-content{
+            margin:-30px auto 0;
+            padding: 0 .2em;
+        }
+}
+
+    @media only screen and (max-width: 568px) {
+        .full-width-landing-page .brand--titles ul {
+            /* top: 2em; */
+            position: relative;
+            top: 0 !important;
+        }
+
+        .full-width-landing-page .brand--titles ul li {
+            list-style: none;
+            padding: .6em 0em .6em 0em;
+        }
+
+        #element--copy grid__item {
+            margin-top: -3.5em;
+        }
+    }
+
+    .full-width-landing-page .brand--elements .element--copy img {
+        padding: 0em 0;
+    }
+    }
+
+    .no--margin {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    tiles-desc ul>img,
+    .card-stream.custom .masonry-item .-nd-tiles-custom.version-1 .-nd-tiles-desc .full-width-landing-page .brand--elements .element--copy ul>img,
+    .full-width-landing-page .brand--elements .element--copy img {
+        padding: 0em 0 !important;
+    }
+
+    .profile-links {
+        color: white;
+        text-decoration: none;
+    }
+@media screen and (max-width: 480px){
+.parent-patient, .col-2-12{
+margin-top:6.5em !important;
+}
+}
+.more-patients h1 {
+    color: #fff !important;
+    font-size: 28px;
+    max-width: 90%;
+    font-weight: bold;
+    margin: auto;
+    margin-top: .5em;
+    margin-right: auto;
+    margin-bottom: .5em;
+    margin-left: auto;
+    line-height: 40px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+@media screen and (min-width: 1066px){
+.patient-details{
+    font-size: 18px !important;
+    margin-top: -17px !important;
+    padding-bottom: 2em !important;
+    margin-left: .8em !important;
+    margin-right: 0.8em !important;
+}
+.patient-content{
+    margin: -30px auto 0;
+    padding: 0 0.3em;
+    width: 128%;
+    position: relative;
+    right: 14%;
+}
+}
+@media screen and (max-width: 1440px){
+.patient-details {
+    font-size: 16.5px !important;
+}
+}
+</style>
+<div class="grid">
+    <div class="col-12-12 pad-0 patient-profile-heading">Many types of patients with T2D have benefited from the
+        simplicity of TRAJENTA<sup class="footnote">®</sup></div>
+</div>
+
+<div class="grid ds--custom-grid">
+    <div class="parent-patient col-2-12 no--margin" style="margin-left: 0 !important;">
+        <div class="patient-image"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                    data-widget="image" href="/trajenta/tony"><img alt="" class="img img-responsive"
+                        src="/sites/default/files/click_on_tony.png" /></a></span></div>
+
+        <div class="patient-content">
+            <h2 class="white content--normal"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/tony">tony*<span><span
+                                class="colons">:</span></span></a></span></h2>
+
+            <p class="patient-details white"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/tony">59 years old <br>Bus driver <br><span class="content--bold">
+                            works long<br> hours </span></a></span></p>
+        </div>
+    </div>
+
+    <div class="parent-patient col-2-12">
+        <div class="patient-image"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                    data-widget="image" href="/trajenta/myriam"><img alt="" class="img img-responsive"
+                        src="/sites/default/files/click_on_myriam.png" /></a></span></div>
+
+        <div class="patient-content">
+            <h2 class="white content--normal"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/myriam">myriam*<span><span
+                                class="colons">:</span></span></a></span></h2>
+
+            <p class="patient-details white"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/myriam">60 years old <br> Housewife <br> with <span
+                            class="content--bold">mild renal <br> impairment</span></a></span></p>
+        </div>
+    </div>
+
+    <div class="parent-patient col-2-12">
+        <div class="patient-image"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                    data-widget="image" href="/trajenta/carol"><img alt="" class="img img-responsive"
+                        src="/sites/default/files/click_on_carol.png" /></a></span></div>
+
+        <div class="patient-content">
+            <h2 class="white"><span contenteditable="false" tabindex="-1"><a class="profile-links" data-widget="image"
+                        href="/trajenta/carol">carol*<span><span class="colons">:</span></span></a></span>
+            </h2>
+
+            <p class="patient-details white content--normal"><span contenteditable="false" tabindex="-1"><a
+                        class="profile-links" data-widget="image" href="/trajenta/carol">70 years old <br> Retired school
+                        <br> teacher with <br><span class="content--bold"> moderate renal <br>impairment </span></a></span></p>
+        </div>
+    </div>
+
+    <div class="parent-patient col-2-12">
+        <div class="patient-image"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                    data-widget="image" href="/trajenta/ronald"><img alt="" class="img img-responsive"
+                        src="/sites/default/files/click_on_ronald.png" /></a></span></div>
+
+        <div class="patient-content">
+            <h2 class="white content--normal"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/ronald">ronald*<span><span
+                                class="colons">:</span></span></a></span></h2>
+
+            <p class="patient-details white"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/ronald">79 years old<br> Retired engineer <br><span
+                            class="content--bold"> Polypharmacy <br></span>T2D patient</a></span></p>
+        </div>
+    </div>
+
+    <div class="parent-patient col-2-12">
+        <div class="patient-image"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                    data-widget="image" href="/trajenta/john"><img alt="" class="img img-responsive"
+                        src="/sites/default/files/click_on_john.png" /></a></span></div>
+
+        <div class="patient-content">
+            <h2 class="white"><span contenteditable="false" tabindex="-1"><a class="profile-links" data-widget="image"
+                        href="/trajenta/john">john*<span><span class="colons">:</span></span></a></span></h2>
+
+            <p class="patient-details white"><span contenteditable="false" tabindex="-1"><a class="profile-links"
+                        data-widget="image" href="/trajenta/john">85 years old<br> Retired farmer<br> <span
+                            class="content--bold"> Frail and elderly</span><br> with <span class="content--bold">high risk<br>
+                            of hypos</span></a></span></p>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="col-12-12 more-patients">
+        <h1>Can more of your T2D patients benefit from TRAJENTA<sup><strong>®</strong></sup> simplicity, when a DPP-4i
+            is needed?</h1>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p class="reduce">*Hypothetical patient profile</p>
+
+<p>&nbsp;</p>

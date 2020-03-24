@@ -80,7 +80,7 @@
 	</section>
 	<!-- End content top -->
 	{% endif %}
-
+   
 	{% if page.content is not empty or page.sidebar_first or page.sidebar_second %}
 	<!-- layout -->
 	<section id="page-wrapper" class="page-wrapper">
@@ -101,7 +101,7 @@
 				</div>
 			  <!---End content -->
 			  {% endif %}
-
+             
 			  {% if page.sidebar_second | render %}
 			  <!--- Start Right SideBar -->
 				<div class="{{sidebarsecond}}  sidebar">
@@ -111,9 +111,26 @@
 			  {% endif %}
 			</div>
 		</div>
+					  <div class="container-fluid width--adjustment pt-3">
+             <div class="row">
+			 {% if page.custom_left | render %}
+			 <div class="col-md-6">
+			 {{ page.custom_left }}
+			 </div>
+			 {% endif %}
+			 {% if page.custom_right | render %}
+			 <div class="col-md-6">
+			 {{ page.custom_right }}
+			 </div>
+			 {% endif %}
+			 <div>
+			 </div>
 	</section>
 	<!-- End layout -->
 	{% endif %}
+
+
+
 
 	{% if page.content_wide %}
 	<!-- Start content wide -->

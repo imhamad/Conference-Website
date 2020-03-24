@@ -1,6 +1,6 @@
-name: Pana Theme
+name: The Masters Conference Theme
 type: theme
-description: 'Pana Drupal 8 Event Theme. Developed & Designed by <a href=http://www.hugestem.com>HugeStem</a>'
+description: 'Theme for Masters Conference'
 package: core
 version: '8.x-1.0'
 core: '8.x'
@@ -37,6 +37,8 @@ regions:
   page_title: 'Page Title'
   breadcrumb: 'Breadcrumb'
   content_wide_top: 'Content Wide Top'
+  custom_left: 'News left section'
+  custom_right: 'Events Right Section'
   content: 'Content'
   sidebar_first: 'Left Sidebar'
   sidebar_second: 'Right Sidebar'
