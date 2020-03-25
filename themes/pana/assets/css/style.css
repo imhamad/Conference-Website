@@ -5060,3 +5060,30 @@ max-width: 75px;
 .block-title{
 	font-weight: 300;
 }
+.block-search{
+	margin-bottom: 0px;
+}
+
+
+
+.search-form input[type="submit"], .block-search input[type="submit"] {
+    background-color: #a2252a;
+    background-image: url(../images/icon-search-light.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 0;
+    border-radius: 50%;
+    margin: 0;
+    text-indent: -9999px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+}
+.search-form input, .search-block-form input {
+    margin: 0;
+    padding-right: 0px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
