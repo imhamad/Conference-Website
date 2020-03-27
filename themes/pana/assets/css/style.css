@@ -280,7 +280,7 @@ section {
 	padding: 80px 0;
 	margin-top: 0;
 	margin-bottom: 0;
-	background-image: url(../images/bg/bg-main.jpg);
+	background-image: url(../images/bg/bg-new.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -288,6 +288,7 @@ section {
 	position: relative;
 	font-size: 15px;
 	text-align: center;
+	min-height: 650px !important;
 }
 #page-title h1 {
     font-size: 35px;
@@ -5091,4 +5092,20 @@ max-width: 75px;
 .negative-margin-button{
 	position: relative;
 	top:-5em;
+}
+
+#page-title h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    display: block;
+    color: #f9f9f9;
+    margin-top: 5.5em;
+}
+@media screen and (max-width:568px){
+	.search-block-form{
+		display: none;
+	}
+	.slide-image img{
+		min-height: 400px !important;
+	}
 }
