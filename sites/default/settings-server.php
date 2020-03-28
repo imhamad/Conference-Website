@@ -757,8 +757,8 @@ $settings['entity_update_backup'] = TRUE;
 # }
 $databases['default']['default'] = array (
   'database' => 'themaste_new-website',
-  'username' => 'root',
-  'password' => 'root',
+  'username' => 'themaste_admin',
+  'password' => '+tXZgjs(,JQZ',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
