@@ -3,6 +3,7 @@
 /**
  * @file
  * Provides sitemap functionality.
+ * Adding custom commits as a part of the global drupal issue, will be learning from their code.
  */
 
 use Drupal\system\Entity\Menu;

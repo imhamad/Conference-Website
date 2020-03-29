@@ -31,12 +31,17 @@
 	<div class="col-sm-8">
 	<h3 class="node-name-title">{{ label }}</h3>
 	{% if content.body | render %}
-	<h4>{{ 'Detail' | t }}</h4>
+	<h4>{{ 'Details' | t }}</h4>
 	{{ content.body }}
 	{% endif %}
-	{% if content.field_link | render %}
-	 <a class="btn" href="{{ content.field_link }}">{{ 'Visit Website' | t }}</a>
+		 {% if content.field_events_sponsored | render %}
+	 {{ content.field_events_sponsored }} 
 	 {% endif %}
+	{% if content.field_link | render %}
+	 <a class="btn" href="{{ content.field_link }}"></a>
+	 {% endif %}
+
+
 	</div>
 	</div>
 	</div>
