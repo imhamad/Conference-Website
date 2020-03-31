@@ -5131,6 +5131,12 @@ max-width: 75px;
 		vertical-align: top;
 	
 }
-
-
-
+.post-body {
+    padding: 15px 20px 0px 20px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #f6f6f6;
+    border-top: none;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
